@@ -41,11 +41,7 @@ public class Product {
     public void setquantity(int quantity) {
         this.quantity = quantity;
     }
-    //What is @Override?
-    //The @Override annotation is used to indicate that a method is overriding a method in the superclass.
     @Override
-    //What is the toString method?
-    //The toString method is a method that returns a string representation of an object.
     public String toString() {
         return "Product Details : " +
                 "id = " + id + "\t" +

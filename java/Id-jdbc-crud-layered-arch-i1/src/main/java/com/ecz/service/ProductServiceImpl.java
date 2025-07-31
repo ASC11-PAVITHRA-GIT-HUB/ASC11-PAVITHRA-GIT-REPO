@@ -7,8 +7,6 @@ import com.ecz.repository.ProductRepositoryCollectionImpl;
 import java.util.List;
 
 public class ProductServiceImpl implements ProductService{
-    //What is a service?
-    //A service is a class that provides business logic to the application.
     ProductRepository productRepository = new ProductRepositoryCollectionImpl();
     public boolean addProduct(Product product) {
         boolean isAdded = false;
@@ -19,7 +17,6 @@ public class ProductServiceImpl implements ProductService{
         }
         return isAdded;
     }
-    // get all products
     public List<Product> getAllProducts() {
 
         return productRepository.getAllProducts();
@@ -27,7 +24,6 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public boolean updateProduct(Product product) {
-        System.out.println("hi");
         throw new UnsupportedOperationException("Not implemented yet");
     }
 }
