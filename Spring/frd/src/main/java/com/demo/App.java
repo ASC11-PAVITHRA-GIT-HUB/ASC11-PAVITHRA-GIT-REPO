@@ -9,3 +9,16 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 }
+
+
+
+
+//GET /api/entity/friends — list all
+//
+//POST /api/entity/friends — create (entity-based)
+//
+//GET /api/entity/friends/{id} — read one
+//
+//PUT /api/entity/friends/{id} — update
+//
+//DELETE /api/entity/friends/{id} — delete
