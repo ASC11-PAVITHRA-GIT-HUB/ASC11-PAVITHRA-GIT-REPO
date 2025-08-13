@@ -14,6 +14,18 @@ public class CourseController {
 
     @Autowired
     private CourseService courseService;
+    @PostMapping("/add")
+    public String addCourse(@RequestBody CourseEntity course) {
+        courseService.addCourse(course);
+        return "Course added successfully";
+    }
+    @DeleteMapping("/delete/{id}")
+    public String deleteCourse(@PathVariable int id) {
+        courseService.deleteCourse(id);
+        return "Course deleted successfully";
+    }
+
+
 
     @GetMapping("/all")
     public List<CourseEntity> getAllCourses() {

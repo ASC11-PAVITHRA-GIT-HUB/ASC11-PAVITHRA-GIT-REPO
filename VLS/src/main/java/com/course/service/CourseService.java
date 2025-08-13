@@ -28,13 +28,18 @@ public class CourseService {
     public List<CourseEntity> searchByName(String name) {
         return courseRepo.findByCourseNameContainingIgnoreCase(name);
     }
-
+    public void deleteCourse(int id) {
+        courseRepo.deleteById(id);
+    }
     public void addToCart(CartEntity cart) {
         cartRepo.save(cart);
     }
 
     public void deleteFromCart(int id) {
         cartRepo.deleteById(id);
+    }
+    public void addCourse(CourseEntity course) {
+        courseRepo.save(course);
     }
 }
 
